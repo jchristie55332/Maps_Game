@@ -1,4 +1,3 @@
-require 'pry-byebug'
 require 'sinatra' #gets sinatra
 require 'sinatra/contrib/all' #auto reloader
 require 'json' #changes hashes to JS and back
