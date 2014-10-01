@@ -1,0 +1,25 @@
+
+<div ng-controller="MyController" class="ng-scope">
+  <div class="hello">
+    <h1>Guess the London stadium and then go somewhere new!</h1>
+    <p>Click on the name to see if your right!</p>
+  </div>
+  <br>
+  <div class="map">
+  <google-map center="map.center" zoom="map.zoom" options="map.options"></google-map>
+  </div>
+  <button ng-click="setCenter()">Click to go somewhere new!</button>
+
+  <div ng-show="answer" class="profile right">
+    <p>Yay You Are Right!</p>
+  </div>
+
+  <div ng-show="notAnswer" class="profile wrong">
+    <p>Oh no wrong! Try again</p>
+  </div>
+
+  <div class="options">   
+    <p ng-repeat="location in locations" ng-click="searchPlace(location)">{{location.name}}</p>
+  </div>
+
+</div>
