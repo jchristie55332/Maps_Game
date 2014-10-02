@@ -1,5 +1,4 @@
 require "sinatra"
-require 'sinatra/contrib/all' #auto reloader
 require 'json' #changes hashes to JS and back
 require 'httparty' #text based web browser for Ruby
 require 'gon-sinatra'
