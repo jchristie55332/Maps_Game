@@ -46,7 +46,15 @@ map {
 
 .options {
   position: absolute;
-  top: 625px;
+  top: 500px;
+  width: 600px;
+  text-align: center;
+}
+.options p {
+  cursor:pointer;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px;
 }
 
 .options p:hover {
@@ -60,5 +68,10 @@ border: 1px solid blue;
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
+  position: absolute;
+  z-index: 999;
+  width: 600px;
+  top: -0px;
+  background-color: whitesmoke;
 
 }

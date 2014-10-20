@@ -25,7 +25,6 @@
       zoom: 18,
       options: {
         streetViewControl: false,
-        disableDoubleClickZoom: true,
         mapTypeId: google.maps.MapTypeId.SATELLITE,
         mapTypeControl: false,
         panControl: false,
@@ -47,11 +46,4 @@
       
     }
   }]);
-
-   app.directive('mapDisplay', function() {
-      return {
-        restrict: 'AEC',
-        templateUrl: 'map-display.html'
-      };
-  });
 })();
